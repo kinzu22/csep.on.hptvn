@@ -1,10 +1,21 @@
 'use client';
 import Image from 'next/image';
 import InViewMotion from './components/InViewMotion.component';
+import Script from 'next/script';
 
 export default function Home() {
     return (
         <main className='min-h-screen '>
+            <Script id='show-banner'>
+                {`document.addEventListener('DOMContentLoaded', function () {
+    var parentIframe = window.parent.document.getElementById('parent-iframe');
+
+    if (parentIframe) {
+        parentIframe.style.height = document.body.scrollHeight + 'px';
+    }
+});
+`}
+            </Script>
             <div className=''>
                 {/* <div className='flex justify-evenly lg:justify-center items-center pt-9 pb-8'>
                     <Image
