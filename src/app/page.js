@@ -8,10 +8,16 @@ export default function Home() {
         <main className='min-h-screen '>
             <Script id='show-banner'>
                 {`document.addEventListener('DOMContentLoaded', function () {
-    var parentIframe = window.parent.document.getElementById('parent-iframe');
+    var iframes = window.parent.document.getElementsByTagName('iframe');
 
-    if (parentIframe) {
-        parentIframe.style.height = document.body.scrollHeight + 'px';
+    for (var i = 0; i < iframes.length; i++) {
+        var parentIframe = iframes[i];
+        if (parentIframe.getAttribute('title') === 'CSEP') {
+            if (parentIframe) {
+                parentIframe.style.height = document.body.scrollHeight + 'px';
+            }
+            break;
+        }
     }
 });
 `}
