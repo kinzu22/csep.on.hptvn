@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <main className='min-h-screen '>
             <div className=''>
-                <div className='flex justify-evenly lg:justify-center items-center pt-9 pb-8'>
+                {/* <div className='flex justify-evenly lg:justify-center items-center pt-9 pb-8'>
                     <Image
                         src='/images/hpt-logo.png'
                         alt='hpt-logo'
@@ -21,7 +21,7 @@ export default function Home() {
                         height={72}
                         className='w-[193px] h-[62px] md:w-[14.563rem] md:h-[4.5rem]'
                     />
-                </div>
+                </div> */}
                 <div className='bg-[#EBFDFFFF] py-[33px] px-[33px] md:pt-20 md:pb-20 md:pl-[7.563rem] md:pr-[6rem]'>
                     <div className='flex'>
                         <InViewMotion animationProps={'fadeInLeft'}>
@@ -64,6 +64,7 @@ export default function Home() {
                                     </p>
                                     <div className='mt-8 flex flex-col md:flex-row gap-4 justify-around items-center text-base font-normal'>
                                         <a
+                                            target='_top'
                                             href='https://hpt.vn/lien-he'
                                             className='hover:scale-110 hover:rounded-md duration-300 ease-in-out cursor-pointer shadow-md rounded gap-2 h-[3.25rem] px-5 flex justify-center items-center bg-[#5271FFFF] text-white hover:bg-[#1641FFFF] hover:text-white active:bg-[#0029DEFF]'
                                         >
@@ -71,6 +72,7 @@ export default function Home() {
                                             <span>Đăng ký tư vấn</span>
                                         </a>
                                         <a
+                                            target='_top'
                                             href='https://hpt.vn/lien-he'
                                             className='hover:scale-110 hover:rounded-lg duration-300 ease-in-out cursor-pointer w-[6.063rem] h-[3.25rem] bg-[#F22128FF] flex justify-center items-center text-white rounded-[1.625rem] hover:bg-[#D20C13FF] active:bg-[#B90B11FF]'
                                         >
@@ -87,6 +89,7 @@ export default function Home() {
                                             </svg>
                                         </a>
                                         <a
+                                            target='_top'
                                             href='https://hpt.vn/lien-he'
                                             className='hover:scale-110 hover:rounded-md duration-300 ease-in-out cursor-pointer border-solid border border-[#117B34FF] rounded gap-2 h-[3.25rem] px-5 flex justify-center items-center text-[#117B34FF] bg-white hover:text-[#0E642AFF] active:text-[#0A4D20FF]'
                                         >
@@ -528,8 +531,12 @@ export default function Home() {
                     <p className='text-[#6F7787FF] text-base'>
                         Tải CSEP Mobile App trên Apple và Goole Store.
                     </p>
-                    <div className='my-[1.75rem] flex gap-4'>
-                        <a href='#'>
+
+                    <div className='my-[1.75rem] flex gap-8'>
+                        <a
+                            href='#'
+                            className='hover:scale-110 hover:rounded-xl duration-300 ease-in-out cursor-pointer'
+                        >
                             <Image
                                 src='/icons/apple-store-icon.png'
                                 alt='apple-store-icon-download'
@@ -537,7 +544,10 @@ export default function Home() {
                                 height={50}
                             />
                         </a>
-                        <a href='#'>
+                        <a
+                            href='#'
+                            className='hover:scale-110 hover:rounded-xl duration-300 ease-in-out cursor-pointer'
+                        >
                             <Image
                                 src='/icons/google-play-download-icon.png'
                                 alt='google-play-download-icon'
