@@ -6,31 +6,32 @@ export default function Home() {
     return (
         <main className='min-h-screen '>
             <div className=''>
-                <div className='flex justify-center items-center pt-9 pb-8'>
+                <div className='flex justify-evenly lg:justify-center items-center pt-9 pb-8'>
                     <Image
                         src='/images/hpt-logo.png'
                         alt='hpt-logo'
                         width={179}
                         height={107}
-                        className='mr-32'
+                        className='w-[150px] h-[84px] md:w-[11.188rem] md:h-[6.688rem] lg:mr-32'
                     />
                     <Image
                         src='/images/csep-logo.png'
                         alt='hpt-logo'
                         width={233}
                         height={72}
+                        className='w-[193px] h-[62px] md:w-[14.563rem] md:h-[4.5rem]'
                     />
                 </div>
-                <div className='bg-[#EBFDFFFF] pt-20 pb-20 pl-[7.563rem] pr-[6rem]'>
+                <div className='bg-[#EBFDFFFF] py-[33px] px-[33px] md:pt-20 md:pb-20 md:pl-[7.563rem] md:pr-[6rem]'>
                     <div className='flex'>
                         <InViewMotion animationProps={'fadeInLeft'}>
                             <div>
                                 <div className='h-[5.438rem]'>
-                                    <h1 className='text-[#0835D9FF] text-[2.5rem] font-bold'>
+                                    <h1 className='text-[#0835D9FF] text-3xl lg:text-[2.5rem] font-bold'>
                                         Giải pháp quản lý tài sản tập trung.
                                     </h1>
                                 </div>
-                                <div className='text-[#9095A1FF] text-base font-normal w-[33.813rem]'>
+                                <div className='text-[#9095A1FF] text-base font-normal lg:w-[33.813rem]'>
                                     <p>
                                         Giúp doanh nghiệp quản lý trọn vẹn vòng
                                         đời tài sản, trang thiết bị theo nhiều
@@ -61,16 +62,16 @@ export default function Home() {
                                         Chuyển đổi số dễ dàng trên một nền tảng
                                         duy nhất.
                                     </p>
-                                    <div className='mt-8 flex justify-around items-center text-base font-normal'>
+                                    <div className='mt-8 flex flex-col md:flex-row gap-4 justify-around items-center text-base font-normal'>
                                         <a
-                                            href='/signupForConsultation.html'
+                                            href='https://hpt.vn/lien-he'
                                             className='hover:scale-110 hover:rounded-md duration-300 ease-in-out cursor-pointer shadow-md rounded gap-2 h-[3.25rem] px-5 flex justify-center items-center bg-[#5271FFFF] text-white hover:bg-[#1641FFFF] hover:text-white active:bg-[#0029DEFF]'
                                         >
                                             <span>+</span>
                                             <span>Đăng ký tư vấn</span>
                                         </a>
                                         <a
-                                            href='#'
+                                            href='https://hpt.vn/lien-he'
                                             className='hover:scale-110 hover:rounded-lg duration-300 ease-in-out cursor-pointer w-[6.063rem] h-[3.25rem] bg-[#F22128FF] flex justify-center items-center text-white rounded-[1.625rem] hover:bg-[#D20C13FF] active:bg-[#B90B11FF]'
                                         >
                                             <svg
@@ -86,7 +87,7 @@ export default function Home() {
                                             </svg>
                                         </a>
                                         <a
-                                            href='#'
+                                            href='https://hpt.vn/lien-he'
                                             className='hover:scale-110 hover:rounded-md duration-300 ease-in-out cursor-pointer border-solid border border-[#117B34FF] rounded gap-2 h-[3.25rem] px-5 flex justify-center items-center text-[#117B34FF] bg-white hover:text-[#0E642AFF] active:text-[#0A4D20FF]'
                                         >
                                             <svg
@@ -108,7 +109,7 @@ export default function Home() {
                         </InViewMotion>
                         <InViewMotion
                             animationProps={'fadeInRight'}
-                            className='flex flex-1 justify-center items-center'
+                            className='hidden md:flex flex-1 justify-center items-center'
                         >
                             <Image
                                 src='/images/img1.png'
@@ -119,7 +120,7 @@ export default function Home() {
                         </InViewMotion>
                     </div>
                 </div>
-                <div className='bg-[#F3F4F6FF] h-[29.75rem] pt-[4rem]'>
+                <div className='bg-[#F3F4F6FF] pt-[4rem] pb-[4rem] md:pb-[2rem]'>
                     <div className='flex items-center flex-col'>
                         <InViewMotion
                             animationProps={'fadeInUp'}
@@ -135,23 +136,23 @@ export default function Home() {
                             </svg>
                             <span className='text-[2.5rem]'>Điểm nổi bật</span>
                         </InViewMotion>
-                        <div className='grid grid-rows-2 grid-cols-3 px-[7.5rem] gap-x-10 gap-y-8'>
+                        <div className='flex flex-col justify-center lg:grid lg:grid-rows-2 lg:grid-cols-3 lg:px-[7.5rem] px-[60px] gap-x-10 gap-y-8'>
                             <InViewMotion animationProps='fadeInLeft'>
                                 <div>
-                                    <p className='text-3xl text-[#00E5FFFF] font-bold h-[3.25rem]'>
+                                    <p className='text-3xl text-[#00E5FFFF] font-bold mb-[12px]'>
                                         Giao diện hiện đại
                                     </p>
-                                    <p className='text-xl text-[#9095A1FF] h-[3.75rem]'>
+                                    <p className='text-xl text-[#9095A1FF]'>
                                         Giao diện thân thiện, dễ tiếp cận.
                                     </p>
                                 </div>
                             </InViewMotion>
                             <InViewMotion animationProps='fadeInUp'>
                                 <div>
-                                    <p className='text-3xl text-[#00E5FFFF] font-bold h-[3.25rem]'>
+                                    <p className='text-3xl text-[#00E5FFFF] font-bold mb-[12px]'>
                                         Quy trình nghiệp vụ
                                     </p>
-                                    <p className='text-xl text-[#9095A1FF] h-[3.75rem]'>
+                                    <p className='text-xl text-[#9095A1FF]'>
                                         Đầy đủ quy trình nghiệp vụ quản lý vòng
                                         đời tài sản.
                                     </p>
@@ -159,13 +160,13 @@ export default function Home() {
                             </InViewMotion>
                             <InViewMotion
                                 animationProps='fadeInRight'
-                                className='row-span-3'
+                                className='lg:row-span-3'
                             >
                                 <div>
-                                    <p className='text-3xl text-[#00E5FFFF] font-bold h-[3.25rem]'>
+                                    <p className='text-3xl text-[#00E5FFFF] font-bold mb-[12px]'>
                                         Tùy chỉnh linh hoạt
                                     </p>
-                                    <p className='text-xl text-[#9095A1FF] h-[3.75rem]'>
+                                    <p className='text-xl text-[#9095A1FF]'>
                                         Nền tảng mạnh mẽ, linh hoạt có khả năng
                                         mở rộng và tùy chỉnh (may đo) linh hoạt
                                         cho từng khách hàng theo từng nhu cầu cụ
@@ -175,10 +176,10 @@ export default function Home() {
                             </InViewMotion>
                             <InViewMotion animationProps='fadeInLeft'>
                                 <div>
-                                    <p className='text-3xl text-[#00E5FFFF] font-bold h-[3.25rem]'>
+                                    <p className='text-3xl text-[#00E5FFFF] font-bold mb-[12px]'>
                                         Tính năng chuyên sâu
                                     </p>
-                                    <p className='text-xl text-[#9095A1FF] h-[3.75rem]'>
+                                    <p className='text-xl text-[#9095A1FF] mb-[12px]'>
                                         Đầy đủ các tính năng quản lý vòng đời
                                         tài sản.
                                     </p>
@@ -186,10 +187,10 @@ export default function Home() {
                             </InViewMotion>
                             <InViewMotion animationProps='fadeInUp'>
                                 <div>
-                                    <p className='text-3xl text-[#00E5FFFF] font-bold h-[3.25rem]'>
+                                    <p className='text-3xl text-[#00E5FFFF] font-bold mb-[12px]'>
                                         Năng lực tích hợp
                                     </p>
-                                    <p className='text-xl text-[#9095A1FF] h-[3.75rem]'>
+                                    <p className='text-xl text-[#9095A1FF] mb-[12px]'>
                                         Cung cấp API, tích hợp với các hệ thống
                                         khác.
                                     </p>
@@ -208,7 +209,7 @@ export default function Home() {
                                 Các phân hệ chính
                             </p>
                         </InViewMotion>
-                        <div className='flex flex-1 justify-around mb-[4.25rem]'>
+                        <div className='flex flex-1 flex-col lg:flex-row lg:justify-evenly items-center gap-y-10 mb-[4.25rem]'>
                             <InViewMotion animationProps='fadeInLeft'>
                                 <div className='bg-[#F3F4F6FF] w-[17rem] hover:scale-110 hover:rounded-xl duration-300 ease-in-out cursor-pointer'>
                                     <div className='flex flex-col justify-center items-center mb-[2.625rem]'>
@@ -368,7 +369,7 @@ export default function Home() {
                         <div className='w-[22.125rem] h-[3.25rem] mt-[4rem] mb-[3rem] flex justify-center items-center bg-[#7A00B8FF] rounded-[1.625rem] text-white text-xl'>
                             <p>Tính năng nổi bật khác</p>
                         </div>
-                        <div className='grid grid-rows-3 grid-flow-col gap-x-11 gap-y-3.5 pb-[4.25rem]'>
+                        <div className='grid lg:grid-rows-3 grid-cols-1 md:grid-cols-2 lg:grid-flow-col gap-x-11 gap-y-3.5 pb-[4.25rem]'>
                             <div className='flex items-center border-2 border-dashed w-[16.25rem] h-[5.25rem] rounded-md'>
                                 <svg
                                     className='w-10 h-10 fill-[#7A00B8FF] mx-[1.875rem]'
